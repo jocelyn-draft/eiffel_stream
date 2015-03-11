@@ -9,40 +9,41 @@ deferred class
 feature -- Access		
 
 	name: READABLE_STRING_32
+			-- Name associated with `Current'.
 		deferred
 		end
 
 feature -- Status report
 
 	end_of_input: BOOLEAN
-			-- Has the end of input stream been reached?
+			-- Has the end of input stream been reached ?
 		deferred
 		end
 
 	is_open_read: BOOLEAN
-			-- Can items be read from input stream?
+			-- Can items be read from input stream ?
 		deferred
 		end
 
 feature -- Access
 
 	index: INTEGER
-			-- Current position in the input stream
+			-- Current position in the input stream.
 		deferred
 		end
 
 	line: INTEGER
-			-- Current line number
+			-- Current line number.
 		deferred
 		end
 
 	column: INTEGER
-			-- Current column number
+			-- Current column number.
 		deferred
 		end
 
 	last_character_code: NATURAL_32
-			-- Last read character
+			-- Last read character code.
 		deferred
 		end
 
@@ -57,7 +58,7 @@ feature -- Basic operation
 		end
 
 note
-	copyright: "Copyright (c) 1984-2012, Eiffel Software and others"
+	copyright: "Copyright (c) 1984-2013, Eiffel Software and others"
 	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
 	source: "[
 			Eiffel Software
